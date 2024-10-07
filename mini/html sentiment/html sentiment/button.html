@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Analyzer - SENTIMENT SNAP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles for this specific page */
+        .url-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            
+        }
+
+        .url-input input[type="text"] {
+            width: 400px;
+            height: 40px;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .url-input button {
+            height: 40px;
+            font-size: 16px;
+            background-color: #ff7200;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 0 20px;
+        }
+
+        .url-input button:hover {
+            font-family: cursive;
+            background-color: #ff5500;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .action-buttons button {
+            height: 50px;
+            font-size: 18px;
+            font-family: cursive;
+            background-color: #ff7200;
+            color: #fff;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+            padding: 0 20px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #ff5500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">SENTIMENT SNAP</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+
+           
+        </div> 
+        
+        <div class="content">
+            <div class="url-input">
+                <input type="text" id="urlInput" placeholder="Enter URL...">
+                <button onclick="analyzeURL()">Analyze</button>
+            </div>
+            <br>
+            <br>
+
+
+            <div class="action-buttons">
+                <button>SHOW SENTIMENT</button>
+                <button onclick="window.location.href='graph.html'">PLOT GRAPH</button>
+                <button>DOWNLOAD</button>
+                <button>WORD CLOUD</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Sentiment Snap. All rights reserved.</p>
+            <ul class="footer-menu">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+   
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        function analyzeURL() {
+            // Placeholder function for URL analysis logic
+            alert("Analyzing URL: " + document.getElementById("urlInput").value);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+     <style>
+        /* Custom styles for this specific page */
+        .url-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            
+        }
+
+        .url-input input[type="text"] {
+            width: 400px;
+            height: 40px;
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .url-input button {
+            height: 40px;
+            font-size: 16px;
+            background-color: #ff7200;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 0 20px;
+        }
+
+        .url-input button:hover {
+            font-family: cursive;
+            background-color: #ff5500;
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .action-buttons button {
+            height: 50px;
+            font-size: 18px;
+            font-family: cursive;
+            background-color: #ff7200;
+            color: #fff;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+            padding: 0 20px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #ff5500;
+        }
+    </style>
+
+</head>
+<body><div class="action-buttons">
+    <h1>Sentiment Analysis</h1>
+    <a href="{{ url_for('download') }}"><button>Download CSV</button></a>
+    <a href="{{ url_for('plot') }}"><button>Plot Graphs</button></a>
+    <a href="{{ url_for('wordcloud') }}"><button>Word Cloud</button></a>
+    <a href="{{ url_for('button') }}"><button>Back</button></a>
+    </div>
+</body>
+</html>

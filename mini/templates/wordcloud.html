@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Clouds</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Word Clouds</h1>
+    <h2>Positive Word Cloud</h2>
+    <img src="data:image/png;base64,{{ pos_wordcloud_data }}" alt="Positive Word Cloud">
+    <h2>Negative Word Cloud</h2>
+    <img src="data:image/png;base64,{{ neg_wordcloud_data }}" alt="Negative Word Cloud">
+    <a href="{{ url_for('analysis') }}"><button>Back</button></a>
+</body>
+</html>

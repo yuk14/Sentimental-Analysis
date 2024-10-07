@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Graphs</h1>
+    <a href="{{ url_for('analysis') }}"><button>Back to Analysis</button></a>
+    <form action="{{ url_for('generate_wordcloud') }}" method="post">
+        <button type="submit">Generate Word Cloud</button>
+    </form>
+    <!-- Add JavaScript to handle graph plotting -->
+</body>
+</html>

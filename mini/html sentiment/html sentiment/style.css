@@ -1,0 +1,351 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+}
+
+/* Navbar Styles */
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+}
+
+.navbar {
+    width: 1200px; /* Fixed width for the navbar */
+    height: 75px;
+    margin: auto; /* Center align horizontally */
+    display: flex;
+    justify-content: space-between; /* Space evenly between elements */
+    align-items: center; /* Center align vertically */
+}
+
+.icon {
+    width: 200px; /* Logo/icon width */
+    float: left; /* Float left to align */
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: cursive;
+    padding-right:30px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.menu {
+    width: 400px; /* Menu width */
+    float: left; /* Float left to align */
+    height: 70px;
+}
+
+ul {
+    display: flex; /* Display menu items in a row */
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    list-style: none; /* Remove default list styles */
+}
+
+ul li {
+    margin-left: 62px; /* Margin between menu items */
+    margin-top: 27px; /* Vertical margin */
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+
+
+/* Content Styles */
+.content {
+    width: 1100px; /* Content width */
+    height: auto; /* Auto height */
+    margin: auto; /* Center align horizontally */
+    color: #fff;
+    position: relative;
+    font-family: cursive;
+    font-size: 25px;
+
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: cursive;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.content h1 {
+    font-family: cursive;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%; /* Top margin for spacing */
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 300px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+    font-family: cursive;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    font-family: cursive;
+    color: #ff7200;
+    font-size: 65px;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Padding at the top and bottom */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Full width */
+    position: absolute; /* Position at the bottom */
+    bottom: 0; /* Stick to the bottom */
+}
+.footer-content {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 22px;
+
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-menu li {
+    margin-left: 20px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu li a:hover {
+    color: #ff7200; /* Hover color */
+}
+
+
+
+/* Login Form Styles */
+.login_form {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.login_form h3 {
+    text-align: center;
+    color: #ff7200;
+    margin-bottom: 20px;
+}
+
+.separator {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.separator span {
+    background-color: #000;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.input_box {
+    margin-bottom: 20px;
+}
+
+.input_box label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.input_box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input_box input:focus {
+    border-bottom-color: #ff7200;
+}
+
+.password_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.password_title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.password_title a:hover {
+    color: #ff7200;
+}
+
+/* Login Button Styles */
+.btnn {
+    width: 100%;
+    background-color: #ff7200;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnn:hover {
+    background-color: #fff;
+    color: #ff7200;
+}
+
+/* Sign Up Link Styles */
+.sign_up {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.sign_up a {
+    color: #ff7200;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sign_up a:hover {
+    color: #fff;
+}
+
+/* Social Icons Styles */
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #ff7200;
+}
+
+.contact-info {
+    margin-top: 20px; /* Add space above the contact info */
+}
+
+.contact-info p {
+    margin-bottom: 10px; /* Add space below each paragraph */
+    line-height: 1.5; /* Improve readability with slightly increased line height */
+    font-size: 25px; /* Adjust font size if necessary */
+}
+
+.contact-info strong {
+    font-weight: bold; /* Make the strong tags bold */
+}
